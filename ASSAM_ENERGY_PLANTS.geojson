@@ -1,0 +1,143 @@
+{
+  "type": "FeatureCollection",
+  "name": "ASSAM_ENERGY_PLANTS",
+  "crs": null,
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "plant_name": "Bongaigaon TPP",
+        "district": "Kokrajhar",
+        "state": "Assam",
+        "inst_cap": "760",
+        "type": "coal_power_plant"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          90.54938,
+          26.51289
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "plant_name": "Bongaigon TPS",
+        "district": "Kokrajhar",
+        "state": "Assam",
+        "inst_cap": "60",
+        "type": "coal_power_plant"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          90.54938774,
+          26.51289256
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "plant_name": "Kathalguri GT",
+        "district": "Dibrugrah",
+        "state": "Assam",
+        "inst_cap": "291.000000000000000",
+        "type": "natural_gas_power_plant"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          95.09,
+          27.41
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "plant_name": "Lakwa CCGT",
+        "district": "Sivsagar",
+        "state": "Assam",
+        "inst_cap": "112.200000000000003",
+        "type": "natural_gas_power_plant"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          94.8833,
+          27.0221
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "plant_name": "Namrup CCGT",
+        "district": "Dibrugarh",
+        "state": "Assam",
+        "inst_cap": "98.400000000000006",
+        "type": "natural_gas_power_plant"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          95.376,
+          27.1858
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "plant_name": "Adamtilla CCGT",
+        "district": "Karimganj",
+        "state": "Assam",
+        "inst_cap": "9.000000000000000",
+        "type": "natural_gas_power_plant"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          92.287665,
+          24.655407
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "plant_name": "Banaskandi CCGT",
+        "district": "Cachar",
+        "state": "Assam",
+        "inst_cap": "15.500000000000000",
+        "type": "natural_gas_power_plant"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          71.762248,
+          24.345474
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "plant_name": "Lakwa Replacement Power\nProject",
+        "district": "Sivsagar",
+        "state": "Assam",
+        "inst_cap": "69.754999999999995",
+        "type": "natural_gas_power_plant"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          94.8833,
+          27.0221
+        ]
+      }
+    }
+  ]
+}
