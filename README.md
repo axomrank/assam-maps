@@ -12,7 +12,7 @@ Explore Assam districts and villages, browse thematic maps, and download reusabl
 To use the interactive pages, serve the repository over HTTP. Opening HTML files directly can prevent data loading.
 
 ```bash
-git clone https://github.com/axomrank/map.git
+git clone https://github.com/axomrank/assam-maps.git
 cd map
 python3 -m http.server 8000
 ```
