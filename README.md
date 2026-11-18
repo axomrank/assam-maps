@@ -1,4 +1,25 @@
-# Assam Map Portal & Map Archive
+# Assam Maps: district and village map portal and open GIS data for Assam
+
+> Assam map portal and GIS data: district and village explorer, 12 catalogued KML/KMZ map sets, and GeoJSON layers for districts, villages, constituencies, railways and more.
+
+**[Live site](https://axomrank.github.io/assam-maps/)** · [Part of AxomRank](https://github.com/axomrank)
+
+## At a glance
+
+- **Map portal:** search districts and villages, and browse thematic maps in the collection viewer (Leaflet)
+- **12 catalogued map sets** (1,870 placemarks), each exported as KML, GeoJSON and CSV with checksums
+- **Administrative layers** in [`data/admin-layers/`](data/admin-layers/LAYERS.md): state boundary, 35 and 33 district sets, sub-districts, 26,000+ villages, 126 assembly and 14 parliamentary constituencies, headquarters, railways and energy plants
+- **Reproducible:** standard-library Python builder, validator and unit tests, run in CI
+
+## Quick start
+
+```bash
+python3 -m http.server 8000                # open http://localhost:8000
+python3 scripts/build_catalog.py && python3 scripts/validate_catalog.py
+python3 -m unittest discover -s tests -v
+```
+
+## Overview
 
 Explore Assam districts and villages, browse thematic maps, and download reusable GIS exports. This repository combines the existing village portal with a catalog of 12 supplied KML/KMZ datasets containing **1,870 placemarks**. Counts include overlapping maps; they are not counts of unique places.
 
@@ -82,3 +103,32 @@ Priorities: verify provenance and dates of this collection, reconcile dated admi
 The supplied files have no verified source URLs, data dates, or licenses. Their catalog status is **unverified**, and no new license is assigned to their contents. Repository availability does not establish reuse rights. Check each provider's terms before redistributing new downloads. Store a copy or reference to the applicable terms and required attribution per dataset.
 
 Descriptions are retained as source text. The collection viewer displays plain text rather than executing embedded HTML. Combined maps can duplicate features in individual maps. Boundaries and constituency data may predate later administrative or electoral changes.
+
+## Roadmap: future improvements
+
+- [ ] Bring the `data/admin-layers/` files into the catalog (`catalog/datasets.json`), with source and date
+- [ ] Reconcile the 33- and 35-district boundaries, and record the date and authority of each
+- [ ] Add rivers and wetlands, flood layers, schools and health facilities
+- [ ] Add printable district maps for exam aspirants (district headquarters, rivers, national parks)
+- [ ] Add a data license (for example ODbL or CC BY 4.0) once the provenance of each layer is confirmed
+
+## For AI agents and contributors
+
+Read [AGENTS.md](AGENTS.md) and `docs/DEVELOPMENT.md`. Never edit `data/raw/` (byte-for-byte originals). Regenerate `data/derived/` with the builder.
+
+Commit as the `axomrank` account. Keep changes small and reviewable, and run the repository's checks before pushing.
+
+## Part of AxomRank
+
+[AxomRank](https://axomrank.pages.dev) offers free, bilingual preparation for Assam government exams. Related repositories:
+
+- **Learn:** [axomrank.github.io](https://github.com/axomrank/axomrank.github.io) (the AxomRank learning app), [ahom-kings-lessons](https://github.com/axomrank/ahom-kings-lessons) (41 bilingual Ahom reign lessons), [floor-test-simulator](https://github.com/axomrank/floor-test-simulator) (parliamentary majority simulator)
+- **Explore Assam history:** [ahom-kingdom-history](https://github.com/axomrank/ahom-kingdom-history) (illustrated Ahom kingdom website), [assam-history-map](https://github.com/axomrank/assam-history-map) (year-by-year historical map), [assam-history-characters](https://github.com/axomrank/assam-history-characters) (character sheets for Assam's history), [assam-visual-archive](https://github.com/axomrank/assam-visual-archive) (gallery of Assam scenes and photographs), [assam-heritage-ai-art](https://github.com/axomrank/assam-heritage-ai-art) (AI art gallery of Assamese heritage)
+- **Open data:** [assam-exam-pyq](https://github.com/axomrank/assam-exam-pyq) (2,398 previous-year questions with answers), [assam-exam-syllabus](https://github.com/axomrank/assam-exam-syllabus) (syllabi for 12 recruitment boards), [assam-history-sources](https://github.com/axomrank/assam-history-sources) (Kamarupa inscriptions and primary sources)
+- **Publishing and brand:** [axomrank-blog](https://github.com/axomrank/axomrank-blog) (exam guides built from real papers), [assam-history-books](https://github.com/axomrank/assam-history-books) (13-book history of Assam), [axomrank-brand-assets](https://github.com/axomrank/axomrank-brand-assets) (brand kit and social media library)
+
+## License and contact
+
+No license file yet. Third-party layers keep their source terms. See the provenance section above.
+
+Corrections and questions: open an issue in this repository. AxomRank is run by Angsuman Das (sole proprietor).
