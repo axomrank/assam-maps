@@ -3,3 +3,6 @@ data/raw/** -text -diff -whitespace
 data/derived/**/map.kml -text -diff -whitespace
 data/derived/**/map.geojson -diff
 data/derived/**/features.csv -diff -whitespace
+data/admin-layers/*.geojson -diff
+data/admin-layers/*.kml -text -diff
+data/admin-layers/*.kmz binary
